@@ -1,5 +1,11 @@
 #include "aurora.dtsi"
 
+&nice_view_spi {
+    mosi-pin = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+    sck-pin = <&gpio1 2 GPIO_ACTIVE_HIGH>;
+    cs- = <&gpio1 7 GPIO_ACTIVE_HIGH>;
+};
+
 &kscan0 {
     col-gpios
         = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
