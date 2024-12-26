@@ -1,8 +1,8 @@
 config AURORA_DONGLE_SHIELD
-    def_bool $(sheilds_list_contains, aurora_dongle)
+    def_bool $(shields_list_contains,aurora_dongle)
 
 config AURORA_LEFT_SHIELD
-    def_bool $(sheilds_list_contains, aurora_left)
+    def_bool $(shields_list_contains,aurora_left)
 
 config AURORA_RIGHT_SHIELD
-    def_bool $(sheilds_list_contains, aurora_right)
+    def_bool $(shields_list_contains,aurora_right)
