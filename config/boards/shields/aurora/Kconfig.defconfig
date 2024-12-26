@@ -1,0 +1,16 @@
+if AURORA_LEFT_SHIELD || AURORA_RIGHT_SHIELD
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if AURORA_DONGLE_SHIELD
+
+config ZMK_KEYBOARD_NAME
+    default "Aurora"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
