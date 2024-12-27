@@ -4,9 +4,7 @@
 
 / {
         keymap {
-                sensors-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 compatible = "zmk,keymap";
-
                 default_layer {
 // ----------------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9   |  0  |   -  |   +  | BSPC |
@@ -23,6 +21,7 @@
    &kp LCTRL &kp LGUI &trans  &kp LALT  &trans &kp SPACE            &kp SPACE  &kp RALT &mo 1     &mo 2   &trans    &kp LEFT    &kp DOWN   &kp RIGHT
    &kp C_MUTE
                         >;
+                        sensors-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------
@@ -39,6 +38,7 @@
    &trans      &trans   &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans    &kp A     &kp S    &kp D
    &kp PSCRN
                         >;
+                        sensors-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 raise_layer {
@@ -55,6 +55,7 @@
    &trans      &trans         &trans        &trans        &trans        &trans             &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans
    &trans      &trans         &trans        &trans        &trans        &trans             &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans
    &trans
+                        sensors-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                         >;
                 };
         };
