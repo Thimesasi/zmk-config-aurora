@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &physical_layout0;
     };
 
     right_encoder: encoder_right {
@@ -17,6 +18,12 @@
         compatible = "zmk,keymap-sensors";
         sensors = <&right_encoder>;
         triggers-per-rotation = <20>;
+    };
+
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
     };
 
     default_transform: keymap_transform_0 {
