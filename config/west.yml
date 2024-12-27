@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: niceviewflip
+      url-base: https://github.com/invrtd
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: niceviewflip
+      revision: nice!view-180
       import: app/west.yml
   self:
     path: config
