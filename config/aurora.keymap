@@ -13,7 +13,7 @@
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O   |  P  | LBKT | RBKT |   \  |
             // | CAPS |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L   |  ;  |  '   | ENTR | REBT |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .   |  /  | SHFT | UPAR | DEL  |
-            // |  CTRL  |  SPR  |  ALT  |    SPC    |   | SPC | ALT | LOW | LOW2 |     | LTAR | DNAR | RTAR |
+            // |  CTRL  |  ALT  |  SPR  |    SPC    |   | SPC | ALT | LOW | LOW2 |     | LTAR | DNAR | RTAR |
 
             bindings = <
 &kp ESC    &kp N1    &kp N2  &kp N3    &kp N4  &kp N5       &kp N6     &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS  &kp EQUAL  &kp BSPC
